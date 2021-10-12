@@ -14,8 +14,10 @@ setup(
     description='A new way to encode words and similarity calculate.',
     long_description = description,
     long_description_content_type = "text/markdown",
-    packages=['WordFP'],
-    install_requires=['pandas','numpy'],
+    #need this when we have more then 1 python file in same __init__.py
+    packages=find_packages(include=['fastsimilarity.py', 'WordFP']),
+    include_package_data=True,
+    install_requires=['numpy==1.20.3','numba>=0.54.1', 'pandas>=1.3.3'],
 	classifiers = [
 		'Intended Audience :: Developers',
 		'Intended Audience :: Science/Research',
@@ -25,8 +27,5 @@ setup(
 		'Operating System :: Microsoft :: Windows',
 		'Operating System :: POSIX :: Linux',
 		'Environment :: MacOS X',
-		'Programming Language :: Python :: 3',
-		'Programming Language :: Python :: 3.6',
-		'Programming Language :: Python :: 3.7',
 		'Programming Language :: Python :: 3.8',]
 )
