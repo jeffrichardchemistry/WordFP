@@ -10,7 +10,7 @@ A jupyter-notebook with an example of using this package is in the examples/how_
 
 <p align="center"><img src="/examples/illustration.png?raw=true" width=500 align="middle"></p>
 
-Another way to use this package is through of web app [WordFP](https://github.com/jeffrichardchemistry/WordFP).
+Another way to use this package is through of web app [WordFP](https://share.streamlit.io/jeffrichardchemistry/wordfp/main/app/app.py).
 It is possible to run locally too following the steps below.
 
 <p align="center"><img src="/examples/wordfp_app.gif?raw=true" align="middle"></p>
