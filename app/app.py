@@ -27,7 +27,7 @@ class FrontEnd(BackEnd):
             st.title('Word FingerPrints')
             st.markdown('{}'.format(self.tex_home))
 
-            pil_img = Image.open('../examples/illustration.png')
+            pil_img = Image.open('figs/illustration.png')
             st.image(pil_img)            
         
         if nav == 'Search Words':
