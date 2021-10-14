@@ -2,6 +2,9 @@ import streamlit as st
 from WordFP import WordFP
 from texts import Texts
 from PIL import Image
+import os
+
+ABSOLUT_PATH = os.path.dirname(os.path.realpath(__file__))
 
 class BackEnd:
     def __init__(self):
@@ -27,7 +30,7 @@ class FrontEnd(BackEnd):
             st.title('Word FingerPrints')
             st.markdown('{}'.format(self.tex_home))
 
-            pil_img = Image.open('figs/illustration.png')
+            pil_img = Image.open(ABSOLUT_PATH+'/figs/illustration.png')
             st.image(pil_img)            
         
         if nav == 'Search Words':
