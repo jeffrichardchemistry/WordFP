@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/416400025.svg)](https://zenodo.org/badge/latestdoi/416400025)
+
+
 # WordFP
 This application consists of a python package made to encode words and compare them through similarity calculation.
 The words are encoded in a matrix of 0's and 1's called "WordFP", where the first column refers to all the letters
