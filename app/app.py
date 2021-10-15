@@ -2,6 +2,7 @@ import streamlit as st
 from WordFP import WordFP
 from texts import Texts
 from PIL import Image
+import pandas as pd
 import os
 
 ABSOLUT_PATH = os.path.dirname(os.path.realpath(__file__))
@@ -55,10 +56,10 @@ class FrontEnd(BackEnd):
                     wordFP=word_inputed,
                     complete_base=self.complete_base, #dataframe with first column of words
                     similarity_metric=method_inputed, alpha=alpha, beta=beta,
-                    threshold=threshold_inputed)
+                    threshold=threshold_inputed)                
                 
-                st.write(words_similarity)
-    
+                st.table(pd.DataFrame({'Words':words_similarity.keys(), 'Similarity':words_similarity.values()}),)
+                #st.dataframe({'Words':words_similarity.keys(), 'Similarity':words_similarity.values()})
     def navbar(self):
         nav = st.sidebar.radio('Go to:', ['HOME', 'Search Words'])
         st.sidebar.markdown('# Contribute')
