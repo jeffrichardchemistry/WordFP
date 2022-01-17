@@ -63,7 +63,7 @@ class FrontEnd(BackEnd):
     def navbar(self):
         nav = st.sidebar.radio('Go to:', ['HOME', 'Search Words'])
         st.sidebar.markdown('# Contribute')
-        st.sidebar.info('{}'.format(self.text_contribute))
+        st.sidebar.info('{}'.format(self.text_contribute))##
         return nav
     
 
