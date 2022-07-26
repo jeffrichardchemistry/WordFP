@@ -5,7 +5,7 @@ with open("README.md", 'r') as fr:
 
 setup(
     name='WordFP',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/jeffrichardchemistry/WordFP',
     license='GNU GPL',
     author='Jefferson Richard Dias',
@@ -17,7 +17,7 @@ setup(
     #need this when we have more then 1 python file in same __init__.py
     packages=find_packages(include=['fastsimilarity.py', 'WordFP']),
     include_package_data=True,
-    install_requires=['numpy==1.20.3','numba>=0.54.1', 'pandas>=1.3.3'],
+    install_requires=['numpy<1.23','numba', 'pandas'],
 	classifiers = [
 		'Intended Audience :: Developers',
 		'Intended Audience :: Science/Research',
