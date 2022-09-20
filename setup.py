@@ -17,7 +17,7 @@ setup(
     #need this when we have more then 1 python file in same __init__.py
     packages=find_packages(include=['fastsimilarity.py', 'WordFP']),
     include_package_data=True,
-    install_requires=['numpy<1.23','numba', 'pandas'],
+    install_requires=['numpy','numba', 'pandas'],
 	classifiers = [
 		'Intended Audience :: Developers',
 		'Intended Audience :: Science/Research',
